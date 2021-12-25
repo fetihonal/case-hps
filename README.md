@@ -56,3 +56,6 @@ Testleri çalıştırmak için aşağıdaki komutu çalıştırın
 ```
 
   
+## Tasarım
+
+https://www.figma.com/file/Wr7Usgaisuz4BPiWM8kuIy/Hepsiburada-React-Challenge?node-id=8%3A123
