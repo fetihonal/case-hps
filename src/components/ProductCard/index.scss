@@ -1,0 +1,103 @@
+.product-card{
+    cursor: pointer;
+    border:1px solid transparent;
+    margin-bottom:24px;
+    .product-card-image{
+        border:1px solid #E5E5E5;
+        border-radius: 5px;
+        padding:0 15px 5px 15px;
+        img{
+            width:100%;
+        }
+    }
+    .product-card-info{
+        padding:10px 15px;
+        border:1px solid transparent;
+        position: relative;
+        h2{
+            height:36px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #484848;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+        span{
+            display: block;
+            font-size: 12px;
+            line-height: 18px;
+            color: #484848;
+        }
+        .product-card-price{
+            margin-top:13px;
+            span{
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 18px;
+                color: #000000;
+            }
+            del{
+                font-size: 13px;
+                line-height: 18px;
+                text-decoration-line: line-through;
+                color: #9B9B9B;
+                small{
+                    font-size: 12px;
+                    color: #F90000;
+                    font-weight: bold;
+                }
+            }
+
+        }
+    }
+    .product-action{
+        display:none;
+        align-items: flex-end;
+        padding:10px 15px;
+        button{
+            width: 100%;
+            border-radius: 8px;
+            border: 0;
+            min-height:32px;
+        }
+        button.addToCart{
+            background: rgba(255, 96, 0, 0.11);
+            color:#FF6000;
+            &:hover{
+                background: rgba(255, 96, 0, 1);
+                color:#fff;
+            }
+        }
+        .passive{
+            background: rgba(126, 126, 126, 0.11);
+            border-radius: 8px;
+            color:#B0B0B0;
+            font-size: 14px;
+            cursor:no-drop
+        }
+
+    }
+    &:hover{
+        border:1px solid #E5E5E5;
+        border-radius: 5px;
+        .product-card-image{
+           border-color: transparent;
+        }
+        .product-card-info{
+            border-color: transparent;
+
+        }
+        .product-action{
+            position: absolute;
+            top: 46px;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 51px);
+            background-color: #fff;
+            display: flex;
+        }
+    }
+}

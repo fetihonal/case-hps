@@ -1,0 +1,23 @@
+.filter-box{
+    h2{
+        font-size: 16px;
+        line-height: 24px;
+        color: #484848;
+        font-weight:600;
+        margin-bottom: 20px;
+    }
+    .filter-list{
+        list-style: none;
+        padding: 0;
+        margin-bottom: 24px;
+        li{
+            font-size: 14px;
+            line-height: 24px;
+            color:#646464;
+            cursor: pointer;
+            &.active{
+                color:#FF6000;
+            }
+        }
+    }
+}
